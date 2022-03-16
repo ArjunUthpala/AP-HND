@@ -1,0 +1,19 @@
+		/*
+		 * DentalFacility m1 = new DentalFacility("FDC", "Kurunegala", 718855719);
+		 * SurgeryRoom mi1 = new SurgeryRoom("R01", "Dr. Sudath Wickrama",
+		 * "Miss. Jayani Ranabahu"); SurgeryRoom mi2 = new SurgeryRoom("R02",
+		 * "Dr. Janaka Perera", "Mrs. Saduni Jayalath"); SurgeryRoom mi3 = new
+		 * SurgeryRoom("R03", "Dr. Kusal Silva", "Miss. Jayani Jayathilake");
+		 * SurgeryRoom mi4 = new SurgeryRoom("R04", "Dr. Dasun Pathirana",
+		 * "Miss. Aloka Gamage"); m1.addRoom(mi1); m1.addRoom(mi2); m1.addRoom(mi3);
+		 * m1.addRoom(mi4); m1.showRooms();
+		 */
+		Patient p1 = new Patient("a", "b", "c", 1, 3);
+		Appointment ap1 = new Appointment("1", "des", "apDate", "apTime");
+		Appointment ap2 = new Appointment("2", "1des", "1apDate", "1apTime");
+		p1.addAppointment(ap1);
+		p1.addAppointment(ap2);
+		ap1.addPatient(p1);
+		ap2.addPatient(p1);
+		p1.showDetails();
+		ap1.showDetails();
